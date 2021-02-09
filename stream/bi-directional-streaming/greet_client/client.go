@@ -106,6 +106,6 @@ func doBiDirectionalStreaming(c greetpb.GreetServiceClient) {
 		close(waitc)
 	}()
 
-	// Block untill everything is done
+	// Block until everything is done
 	<-waitc
 }
